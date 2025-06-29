@@ -3,17 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Color Flipper</title>
+  <title>Color Flipper | JS Mini App</title>
+  <meta name="description" content="Simple color flipper project using HTML, CSS, and JavaScript. Click to change background color.">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="card">
     <h1>🎨 Color Flipper</h1>
-    <p>Current Color: <span id="colorCode">#ffffff</span></p>
+    <p>
+      Current Color: 
+      <span id="colorCode">#ffffff</span>
+      <button id="copyBtn" title="Copy to clipboard">📋</button>
+    </p>
+
     <button id="flipBtn">Flip Background</button>
+    <button id="darkModeBtn">🌙 Toggle Dark Mode</button>
+
+    <p id="copiedMsg" class="hidden">✅ Copied!</p>
   </div>
 
-  <!-- ✅ Make sure this is at the end -->
   <script src="script.js"></script>
 </body>
 </html>
